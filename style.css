@@ -1,0 +1,239 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Lora', serif;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+    background-position: center;
+    background-size: center;
+}
+.navbar{
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+li a:hover{
+    background: white;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: black;
+}
+.logo {
+    font-weight: bold;
+    color: white;
+    font-size: 30px; 
+}
+.content{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: black;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover{
+    background: rgb(0, 192, 226);
+    transition: 0.5s;
+}
+button:hover{
+    color: white;
+}
+.banner video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width: 100%;
+        height: auto;
+    }
+}
+/*about section*/
+#about {
+    text-align: center;
+    padding: 100px 0; /* Adjust the padding as needed for spacing */
+    background-color: #f5f5f5; /* Add a background color */
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto; /* Center horizontally */
+    background-color: white; /* Add a background color to the content */
+    padding: 20px;
+    border-radius: 5px;
+}
+.about-content h2 {
+    margin-bottom: 30px;
+    font-size: 38px; 
+}
+
+.about-content p {
+    font-size: 18px; 
+
+}
+
+
+/* Center the gallery section */
+#gallery {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 1vh; /* Adjust the minimum height as needed */
+    padding: 10px 0;
+    font-size: 18px; 
+}
+
+/* Add margin between the cards */
+.card {
+    border-radius: 5px;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+/* Style the contact section with a black background */
+#contact {
+    background-color: black;
+    color: white; /* Set the text color to white for contrast */
+    padding: 50px 0; /* Add padding to create space at the top and bottom */
+}
+
+/* Center the reservation form */
+#reservation-form {
+    text-align: center;
+}
+
+/* Style the form elements */
+#reservation-form h3 {
+    color: white; /* Set the heading text color to white */
+}
+
+#reservation-form label {
+    display: block; /* Display labels on a new line */
+    margin-top: 10px; /* Add margin between form elements */
+}
+
+#reservation-form input[type="text"],
+#reservation-form input[type="email"],
+#reservation-form input[type="date"],
+#reservation-form input[type="time"],
+#reservation-form input[type="number"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin between form elements */
+    border: none;
+    background-color: #333; /* Set input background color */
+    color: white; /* Set input text color to white */
+}
+
+#reservation-form button {
+    background-color: #ff6600; /* Set button background color */
+    color: white; /* Set button text color to white */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reservation-form button:hover {
+    background-color: #ff4500; /* Change button background color on hover */
+}
+
+/* Add or update your existing CSS styles as needed */
+
+/* Style the footer section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Style the social media icons */
+.social-media {
+    margin-top: 10px;
+}
+
+/* Resize the footer images (icons) */
+.social-media img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 10px; /* Add space between the icons */
+}
+
+/* CSS for the review section */
+#reviews {
+    background-color: #f5f5f5; /* Add background color to the review section */
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.review-container {
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.reviews-scroll {
+    display: flex; /* Display reviews in a row */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Add smooth scrolling behavior */
+    white-space: nowrap; /* Prevent reviews from wrapping to a new line */
+}
+
+.review {
+    width: 1200px; /* Adjust review width as needed */
+    padding: 20px;
+    margin: 10px; /* Add margin between reviews */
+    background-color: white; /* Add background color to individual reviews */
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to reviews */
+}
+
+.review-author {
+    margin-top: 10px;
+    font-style: italic;
+}
